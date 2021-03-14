@@ -47,8 +47,8 @@ public class Booking extends AppCompatActivity implements
         SignOut=(Button)findViewById(R.id.iSignOut);
         BookARide=(Button)findViewById(R.id.iBookARide);
         EBike=(ImageView)findViewById(R.id.iEBike);
-        //timePicker=(TimePicker) findViewById(R.id.iTimePicker);
-        //datePicker= (DatePicker) findViewById(R.id.iDatePicker);
+        timePicker=(TimePicker) findViewById(R.id.iTimePicker);
+        datePicker= (DatePicker) findViewById(R.id.iDatePicker);
         mAuth = FirebaseAuth.getInstance();
 
         Spinner spin = (Spinner) findViewById(R.id.iSpinner);
@@ -57,6 +57,7 @@ public class Booking extends AppCompatActivity implements
         //Creating the ArrayAdapter instance having the country list
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,country);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(aa);
 

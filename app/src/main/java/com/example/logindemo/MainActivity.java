@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(MainActivity.this,PasswordReset.class));
-                //Toast.makeText(MainActivity.this, "Baba Jee Ka Churan Chaatiye", Toast.LENGTH_LONG).show();
+
             }
         });
 
